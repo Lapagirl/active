@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "raleway";
+    src: url("../fonts/raleway.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "raleway-bold";
+    src: url("../fonts/raleway-bold.ttf") format("truetype");
+}
+
+html,
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-width: 960px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+a.button {
+    display: block;
+    width: 124px;
+    height: 49px;
+    line-height: 49px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Шапка*/
+
+.header {
+    font-family: raleway, sans-serif;
+    width: inherit;
+    height: 700px;
+    position: relative;
+}
+
+.header-bg {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-1 {
+    background-color: #000;
+    opacity: 0.2;
+    z-index: -1;
+}
+.bg-2 {
+    background: url("../img/header-bg.jpg") no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.header-group {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header-group .logo {
+    margin: 24px 70px;
+    float: left;
+}
+
+.social-list-group {
+    float: right;
+    margin: 49px 56px 0 0;
+    font-size: 0;
+}
+
+.social-list-group a {
+    padding: 5px;
+    margin: 0 2px;
+    font-size: 1rem;
+}
+.social-list-group .fa {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.social-list-group a:hover > .fa {
+    color: #fff51f;
+}
+
+.group-2 {
+    margin-top: 147px;
+}
+
+.welcome {
+    width: 270px;
+    height: 300px;
+    margin-top: 95px;
+    padding: 74px 25px 25px;
+    overflow: hidden;
+    background-color: #fff51f;
+    box-sizing: border-box;
+    float: left;
+}
+
+.welcome h1,
+.welcome p {
+    color: #333;
+}
+
+.welcome h1 {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+.welcome p {
+    font-size: 1.125rem;
+    line-height: 0.778;
+    font-style: italic;
+}
+
+.brand-new {
+    float: right;
+    width: 313px;
+    margin-right: 110px;
+    color: #fff51f;
+}
+
+.brand-new > h2 {
+    font-family: "raleway-bold", sans-serif;
+    font-size: 3rem;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.brand-new > p {
+    line-height: 1.333;
+}
+
+a.buy {
+    font-family: "raleway-bold", sans-serif;
+    background-color: #fff51f;
+    color: #000;
+    margin: 62px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.buy:hover {
+    background-color: #58a1d8;
+    color: #fff;
+}
+
+a.buy:active {
+    font-size: 0.9rem;
+}
+
