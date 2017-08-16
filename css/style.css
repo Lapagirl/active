@@ -32,6 +32,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*Общее*/
 body {
@@ -57,7 +61,6 @@ a.button {
     height: 49px;
     line-height: 49px;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 /*Шапка*/
@@ -227,7 +230,6 @@ a.buy:active {
     padding-left: 40px;
     width: 100%;
     box-sizing: border-box;
-    text-decoration: none;
     color: #000;
 }
 
@@ -241,7 +243,7 @@ a.buy:active {
     position: absolute;
     width: 270px;
     height: 43px;
-    top: -2px;
+    top: -4px;
     left: 0;
     background-color: #333;
     z-index: -1;
@@ -495,3 +497,124 @@ span.instagram-feed-adress {
     height: 100%;
 }
 
+.footer {
+    background-color: #373737;
+
+}
+.footer-first-line-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0 64px;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-first-line-group > .category,
+.footer-first-line-group > .support {
+    width: 100px;
+}
+
+.footer-first-line-group > .account {
+    width: 160px;
+}
+
+.footer-first-line-group > .newsletter {
+    width: 350px;
+}
+
+.footer-first-line-group > .about-us {
+    width: 250px;
+}
+
+.footer-first-line-group-item > h2 {
+    font-family: "raleway-bold", sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer-first-line-group-item > h2 {
+    margin-bottom: 21px;
+}
+
+.footer-first-line-group-item > ul > li {
+    line-height: 1.14;
+}
+
+.footer-first-line-group-item > ul > li > a,
+.footer-first-line-group-item p {
+    font-family: "roboto", sans-serif;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.footer-first-line-group-item > ul > li > a:hover {
+    text-decoration: underline;
+    color: #fff51f;
+}
+
+.newsletter form.newsletter-subscribe {
+    margin: 20px 0 45px 0;
+    font-family: "roboto", sans-serif;
+    font-size: 0.75rem;
+}
+
+form.newsletter-subscribe > input[type="email"],
+form.newsletter-subscribe > input[type="submit"] {
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+form.newsletter-subscribe > input[type="email"] {
+    float: left;
+    width: 180px;
+    background-color: #fff51f;
+    color: #333333;
+    font-weight: 700;
+}
+
+form.newsletter-subscribe > input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+}
+
+.about-us a {
+    color: #faef03;
+}
+
+.about-us a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+.footer-second-line-group {
+    background-color: #333333;
+}
+
+.footer-second-line-group-content {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-second-line-group-content > p {
+    font-family: "roboto", sans-serif;
+    font-size: 0.75rem;
+    color: #dad9d9;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.footer-second-line-group-content > div.social-icons > a {
+    color: #fff;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.footer-second-line-group-content > div.social-icons > a > .fa:hover {
+    color: #fff51f;
+}
