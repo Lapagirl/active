@@ -427,7 +427,16 @@ a.buy:active {
 .social-group-instagram {
     background-color: #eaeaea;
 }
-.social-group-instagram  > h2 {
+
+.social-group-instagram > div {
+    text-align: center;
+}
+.social-group-instagram > div .fa {
+    vertical-align: middle;
+}
+
+.social-group-instagram h2 {
+    display: inline-block;
     font-size: 1.375rem;
     font-weight: 900;
     font-style: italic;
