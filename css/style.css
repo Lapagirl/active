@@ -418,8 +418,9 @@ a.buy:active {
 
 .brands > a {
     margin: 0 5px;
-    padding: 30px 10px;
+    padding: 50px 10px;
 }
+
 .brands img {
     width: 100%;
 }
@@ -444,6 +445,14 @@ a.buy:active {
     text-align: center;
     height: 106px;
     line-height: 106px;
+}
+
+.social-group-instagram h2 > a {
+    color: inherit;
+}
+
+.social-group-instagram h2 > a:hover {
+    color: #26d2fc;;
 }
 
 span.instagram-feed-adress {
@@ -489,12 +498,24 @@ span.instagram-feed-adress {
     background-color: #3b5997;
 }
 
+.social-group-second-line > a:hover > .fa-facebook {
+    background-color: #374680;
+}
+
 .social-group-second-line > a > .fa-twitter {
     background-color: #3fccfd;
 }
 
+.social-group-second-line > a:hover > .fa-twitter {
+    background-color: #3aaedf;
+}
+
 .social-group-second-line > a > .fa-pinterest-p {
     background-color: #cb2027;
+}
+
+.social-group-second-line > a:hover > .fa-pinterest-p {
+    background-color: #ac2027;
 }
 
 .footer {
