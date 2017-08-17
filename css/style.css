@@ -476,7 +476,7 @@ span.instagram-feed-adress {
     transform: translate(-50%, -50%);
 }
 
-.social-group-second-line > .fa {
+.social-group-second-line > a > .fa {
     float: left;
     width: 33.3%;
     line-height: 150px;
@@ -485,25 +485,16 @@ span.instagram-feed-adress {
     position: relative;
 }
 
-.social-group-second-line > .fa-facebook {
+.social-group-second-line > a > .fa-facebook {
     background-color: #3b5997;
 }
 
-.social-group-second-line > .fa-twitter {
+.social-group-second-line > a > .fa-twitter {
     background-color: #3fccfd;
 }
 
-.social-group-second-line > .fa-pinterest-p {
+.social-group-second-line > a > .fa-pinterest-p {
     background-color: #cb2027;
-}
-
-.social-group-second-line > .fa > a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .footer {
@@ -587,6 +578,47 @@ form.newsletter-subscribe > input[type="submit"] {
     color: #fff;
 }
 
+form.newsletter-subscribe > input[type="submit"]:hover {
+    background-color: #58a1d8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .system {
+    width: 36px;
+    height: 22px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .system:last-child {
+    margin-right: 0;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .aex {
+    background: url("../img/sprite-payment-systems.png") no-repeat 0 0;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .mastercard {
+    background: url("../img/sprite-payment-systems.png") no-repeat -40px 0;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .maestro {
+    background: url("../img/sprite-payment-systems.png") no-repeat -80px 0;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .paypal {
+    background: url("../img/sprite-payment-systems.png") no-repeat 0 -26px;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .discover {
+    background: url("../img/sprite-payment-systems.png") no-repeat -40px -26px;
+}
+
+.footer-first-line-group .newsletter > .payment-systems > .visa {
+    background: url("../img/sprite-payment-systems.png") no-repeat -80px -26px;
+}
+
 .about-us a {
     color: #faef03;
 }
@@ -596,6 +628,24 @@ form.newsletter-subscribe > input[type="submit"] {
     text-decoration: underline;
 }
 
+.footer-first-line-group > .about-us .phone-and-email-group {
+    display: table;
+    margin: 14px 0;
+}
+
+.footer-first-line-group > .about-us .phone-and-email-group > div {
+    display: table-row;
+    height: 32px;
+}
+
+.footer-first-line-group > .about-us .phone-and-email-group > div > p {
+    font-size: 0.875rem;
+    display: table-cell;
+}
+
+.footer-first-line-group > .about-us .phone-number > p:first-child {
+    width: 90px;
+}
 
 
 .footer-second-line-group {
