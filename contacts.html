@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <title>Active — интернет-магазин товаров для активного отдыха</title>
+    </head>
+
+    <body>
+        <div class="container contacts">
+            <div class="header">
+                <div class="header-bg bg-1"></div>
+                <div class="header-bg bg-0"></div>
+                <div class="header-group group-1 clearfix">
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+                    <div class="social-list-group">
+                        <a class="solial-list-group-item" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="solial-list-group-item" href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="solial-list-group-item" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a class="solial-list-group-item" href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a class="solial-list-group-item" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>Контакты</h1>
+                <form class="contact-us" action="#" method="post">
+                    <fieldset>
+                        <legend>Напишите нам</legend>
+                        <input type="text" name="username" placeholder="Введите ваше имя">
+                        <br />
+                        <input type="email" name="email" placeholder="Введите ваш адрес электронной почты">
+                        <br />
+                        <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+                        <br />
+                        <br />
+                        Выберите наиболее удобный способ связи с вами:<br />
+                        <label><input type="radio" id="radio-1" name="communication-way" value="email-way">По электронной почте</label>
+                        <label><input type="radio" id="radio-2" name="communication-way" value="phone-way">По телефону</label>
+                        <br />
+                        <br />
+                        <input type="text" name="subject" placeholder="Тема сообщения">
+                        <br />
+                        <label for="message">Суть вашего письма:</label>
+                        <br />
+                        <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                        <br />
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+
+                <h2>Адрес</h2>
+                <ul class="address">
+                    <li><span class="bold-font">Телефон:</span> +7(496)723-45-67</li>
+                    <li><span class="bold-font">Skype:</span> active_shop</li>
+                    <li><span class="bold-font">Email:</span> hello@active.ru </li>
+                    <li><span class="bold-font">Адрес офиса:</span> г. Домодедово, ул. Зелёная, д.42</li>
+                    <li><span class="bold-font">Пункт самовывоза:</span> г. Домодедово, ул. Зелёная, д.42</li>
+                </ul>
+
+                <div id="yandex-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=mymaps%3AccBNUBntJqA7AXfAmZFgbqYKCvEebZMc&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-first-line-group">
+                    <div class="footer-first-line-group-item category">
+                        <h2>Категории</h2>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Популярное</a></li>
+                            <li><a href="#">Распродажа</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-first-line-group-item account">
+                        <h2>Личный кабинет</h2>
+                        <ul>
+                            <li><a href="#">Текущие заказы</a></li>
+                            <li><a href="#">История заказов</a></li>
+                            <li><a href="#">Личные данные</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-first-line-group-item support">
+                        <h2>Поддержка</h2>
+                        <ul>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-first-line-group-item newsletter">
+                        <h2>Новости</h2>
+                        <p>Хотите быть в курсе наших новинок и акций? <br />Подпишитесь на новостную рассылку</p>
+                        <form class="newsletter-subscribe" action="#" method="post">
+                            <input type="email" name="user-email" placeholder="Укажите ваш email">
+                            <input type="submit" name="submit" value="Подписаться">
+                        </form>
+                        <div class="payment-systems">
+                            <div class="system aex"></div>
+                            <div class="system mastercard"></div>
+                            <div class="system maestro"></div>
+                            <div class="system paypal"></div>
+                            <div class="system discover"></div>
+                            <div class="system visa"></div>
+                        </div>
+                    </div>
+                    <div class="footer-first-line-group-item about-us">
+                        <h2>О нас</h2>
+                        <p>Мы созданы для того, чтобы сделать ваш отдых увлекательнее, а эмоции &mdash; ярче!</p>
+                        <div class="phone-and-email-group">
+                            <div class="phone-number">
+                                <p>Телефон:</p>
+                                <p>+7(496)123-45-67</p>
+                            </div>
+                            <div class="email">
+                                <p>Email:</p>
+                                <p><a href="mailto:hello@active.ru">hello@active.ru</a></p>
+                            </div>
+                            <div class="adress">
+                                <p>Адрес:</p>
+                                <p>г. Домодедово, ул. Зелёная, д.42</p>
+                            </div>
+                            <div class="map">
+                                <p></p>
+                                <p><a href="contacts.html#yandex-map">Посмотреть на карте</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-second-line-group">
+                    <div class="footer-second-line-group-content">
+                        <p>&copy; 2017 Lapagirl. Все права защищены</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
