@@ -74,6 +74,10 @@ a.button {
     border: outset 1px;
 }
 
+.catalog h1 {
+    margin-bottom: 26px;
+}
+
 /*.button:hover {*/
     /*border: inset 1px;*/
 /*}*/
@@ -95,12 +99,13 @@ span.bold-font {
 .header {
     font-family: raleway, sans-serif;
     width: inherit;
-    height: 100px;
+    height: 250px;
     position: relative;
 }
 
 .main-page > .header {
     height: 700px;
+    box-sizing: border-box;
 }
 
 .header-bg {
@@ -112,7 +117,7 @@ span.bold-font {
 }
 
 .header > .bg-0 {
-    background: url("../img/header-bg-small.jpg") no-repeat;
+    background: url("../img/bg-3.jpg") no-repeat;
     background-size: cover;
     z-index: -2;
 }
@@ -182,7 +187,7 @@ span.bold-font {
     color: #333;
 }
 
-.welcome h1 {
+h1 {
     font-size: 1.875rem;
     text-transform: uppercase;
 }
@@ -259,7 +264,7 @@ a.buy:active {
     display: block;
     position: relative;
     font-size: 0.9rem;
-    line-height: 2.5;
+    line-height: 3;
     font-weight: 900;
     padding-left: 40px;
     width: 100%;
@@ -267,20 +272,10 @@ a.buy:active {
     color: #000;
 }
 
-.main-menu-list > li > a:hover {
-    color: #fff;
-    z-index: 1;
-}
-
-.main-menu-list > li > a:hover::before {
-    content: " ";
-    position: absolute;
-    width: 270px;
-    height: 43px;
-    top: -4px;
-    left: 0;
+.main-menu-list > li > a:hover,
+.main-menu-list > li > a.selected-menu {
     background-color: #333;
-    z-index: -1;
+    color: #fff;
 }
 
 .right-column > .main-menu {
@@ -289,8 +284,13 @@ a.buy:active {
 
 .menu-and-content-group {
     display: flex;
+    margin: 20px auto 0;
+}
+
+div.main-page .menu-and-content-group {
     margin: -20px auto 0;
 }
+
 
 /*Левая колонка*/
 
@@ -307,7 +307,6 @@ a.buy:active {
     text-transform: uppercase;
     line-height: 3.6;
     padding-left: 25px;
-
 }
 
 .main-page .left-column h2:first-of-type {
@@ -329,11 +328,16 @@ a.buy:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.left-column > ul:last-child {
+    margin-bottom: 0;
 }
 
 .left-column > ul > li {
     position: relative;
-    padding: 10px;
+    padding: 10px 10px 14px;
     background-color: #fff;
     width: 270px;
     box-sizing: border-box;
@@ -391,7 +395,7 @@ a.buy:active {
     text-decoration: line-through;
 }
 
-.left-column > ul > li > .new-products-list-group-item-link {
+.left-column > ul > li > .products-list-group-item-link {
     display: block;
     position: absolute;
     width: 100%;
@@ -402,7 +406,8 @@ a.buy:active {
 }
 
 .new::before,
-.hot::before {
+.hot::before,
+.sale::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -412,8 +417,8 @@ a.buy:active {
 }
 
 .new::before {
-    border-top: 22px solid #e24602;
-    border-right: 22px solid #e24602;
+    border-top: 22px solid #09a207;
+    border-right: 22px solid #09a207;
 }
 
 .hot::before {
@@ -421,8 +426,14 @@ a.buy:active {
     border-right: 24px solid #faef03;
 }
 
+.sale::before {
+    border-top: 22px solid #e24602;
+    border-right: 24px solid #e24602;
+}
+
 .new::after,
-.hot::after {
+.hot::after,
+.sale::after {
     font-size: 0.563rem;
     font-weight: 400;
     position: absolute;
@@ -433,13 +444,18 @@ a.buy:active {
 }
 
 .new::after {
-    content: " New ";
+    content: "New";
     color: #fff;
 }
 
 .hot::after {
-    content: " Hot ";
+    content: "Hot";
     color: #000;
+}
+
+.sale::after {
+    content: "Sale";
+    color: #fff;
 }
 
 .brands {
@@ -497,6 +513,7 @@ span.instagram-feed-adress {
 .instagram-photo-list {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 .instagram-photo-list > li {
