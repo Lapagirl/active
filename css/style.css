@@ -64,29 +64,11 @@ a.button {
     box-sizing: border-box;
 }
 
-.button {
-    text-decoration: none;
-    display: block;
-    line-height: 40px;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    border: outset 1px;
-}
-
 h1 {
     font-size: 1.875rem;
     text-transform: uppercase;
     margin-bottom: 26px;
 }
-
-/*.button:hover {*/
-    /*border: inset 1px;*/
-/*}*/
-
-/*.button:active {*/
-    /*font-size: 0.9rem;*/
-/*}*/
 
 span.dashed {
     border-bottom: dashed 1px #004494;
@@ -95,6 +77,43 @@ span.dashed {
 span.bold-font {
     font-weight: 700;
 }
+
+
+/* Хлебные крошки*/
+
+.breadcrumbs {
+    margin-bottom: 10px;
+}
+
+.breadcrumbs > a {
+    display: inline-block;
+    position: relative;
+    color: #333;
+}
+
+.breadcrumbs a + a {
+    margin-left: 20px;
+}
+
+.breadcrumbs a + a::before {
+    content: "/";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+.breadcrumbs > a:hover {
+    color: #58a1d8;
+}
+
+.breadcrumbs a + a:hover::before {
+    color: #333;
+}
+
+
 
 /*Шапка*/
 
@@ -177,7 +196,7 @@ span.bold-font {
     width: 270px;
     height: 300px;
     margin-top: 95px;
-    padding: 74px 25px 25px;
+    padding: 78px 25px 25px;
     overflow: hidden;
     background-color: #fff51f;
     box-sizing: border-box;
@@ -190,7 +209,8 @@ span.bold-font {
 }
 
 .welcome h1 {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    line-height: 1;
 }
 
 .welcome p {
@@ -337,8 +357,7 @@ div.main-page .menu-and-content-group {
     margin-bottom: 0;
 }
 
-.main-page .right-column > ul > li,
-.catalog .right-column > ul > li{
+.right-column .products-list-group-item {
     position: relative;
     padding: 10px 10px 14px;
     background-color: #fff;
@@ -347,8 +366,7 @@ div.main-page .menu-and-content-group {
     margin-bottom: 30px;
 }
 
-.main-page .right-column > ul > li > .img-container,
-.catalog .right-column > ul > li > .img-container {
+.right-column .products-list-group-item > .img-container {
     width: 248px;
     height: 229px;
     border: solid 1px #ccc;
@@ -356,8 +374,7 @@ div.main-page .menu-and-content-group {
 
 }
 
-.main-page .right-column > ul > li img,
-.catalog .right-column > ul > li img {
+.right-column .products-list-group-item img {
     object-fit: contain;
     width: inherit;
     height: inherit;
@@ -387,7 +404,7 @@ div.main-page .menu-and-content-group {
     box-sizing: border-box;
 }
 
-.right-column > ul > li .price {
+.right-column .price {
     float: right;
     text-align: right;
     width: 30%;
@@ -395,13 +412,13 @@ div.main-page .menu-and-content-group {
     color: inherit;
 }
 
-.right-column > ul > li .price > .old-price {
+.right-column .price > .old-price {
     color: #e24602;
     font-size: 0.875rem;
     text-decoration: line-through;
 }
 
-.right-column > ul > li > .products-list-group-item-link {
+.right-column .products-list-group-item-link {
     display: block;
     position: absolute;
     width: 100%;
@@ -807,52 +824,27 @@ form.newsletter-subscribe > input[type="submit"]:hover {
     border-color: #4d8065;
 }
 
-.price {
-    font-size: 2rem;
-    color: red;
-    text-align: right;
-}
-
-.price > .old-price {
-    font-size: 0.9rem;
-    text-decoration: line-through;
-    color: gray;
-
-}
-
-.read_more:hover {
-    background-color: #127926;
-    border-color: #2d6b4a;
-}
-
 
 /*Продукт*/
 
-.border {
-    border: ridge 4px #fdcd1f;
-}
-
-.border:hover {
+.product .products-list-group-item a:hover + .img-container {
     border-color: transparent;
 }
 
-.product-image img {
-    width: 50%;
-    display: block;
+.product .products-list-group-item {
     float: left;
-    margin-bottom: 20px;
 }
 
 .short-description-group {
-    width: 48%;
+    width: 570px;
     float: right;
 }
 
-.product .content h2 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+.product .right-column h2 {
+    text-transform: uppercase;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .short-description {
@@ -867,21 +859,22 @@ form.newsletter-subscribe > input[type="submit"]:hover {
     display: none;
 }
 
-.product #hdn-1 + label + div {
+.product #hdn-1 + label + .show-full-description {
     display: none;
+    margin-top: 15px;
 }
 
-.product #hdn-1:checked + label + div
-{
+.product #hdn-1:checked + label + div {
     display: block;
 }
 
 .product #hdn-1 + label,
 .product #hdn-2 + label {
     font-size: 14px;
-    color: #004494;
+    color: #333;
     cursor: pointer;
-    display: block;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .product #hdn-1:checked + label {
@@ -890,34 +883,32 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 
 .product #hdn-1 + label:hover,
 .product #hdn-2 + label:hover {
-    color: #127926;
-    border-color: #127926;
-}
-
-.buy {
-    float: left;
-    background-color: #004494;
-    color: #fff;
-    border-color: #4d7db5;
-    margin: 20px 0 20px 0;
-}
-
-.buy:hover {
-    background-color: #127926;
-    border-color: #2d6b4a;
+    color: #58a1d8;
+    border-color: #58a1d8;
 }
 
 .full-description {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+    color: #333;
+    line-height: 1.5rem;
 }
+
+.product .buy {
+    float: left;
+    margin: 20px 0 20px 0;
+}
+
+.product .right-column .price {
+    font-size: 2rem;
+}
+
+.product .right-column .price > .old-price {
+    font-size: 1.2rem;
+}
+
 
 .short-description:first-letter,
 .full-description:first-letter {
-    font-family: "raleway";
+    font-family: "raleway", sans-serif;
     color: #004494;
     font-size: 1.2rem;
 }
@@ -925,6 +916,7 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 .characteristics {
     width: 600px;
     border-collapse: collapse;
+    margin-bottom: 40px;
 }
 
 .characteristics th {
@@ -934,13 +926,13 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 
 .characteristics td,
 .characteristics th {
-    border-top: solid 1px rgba(253, 205, 31, 0.65);
-    border-bottom: solid 1px rgba(253, 205, 31, 0.65);
+    border-top: solid 1px #26d2fc;
+    border-bottom: solid 1px #26d2fc;
     padding: 8px;
 }
 
 .characteristics .group {
-    background-color: rgba(253, 205, 31, 0.65);
+    background-color: rgba(38, 210, 252, 0.28);
 }
 
 .characteristics td:first-child,
