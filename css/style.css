@@ -46,7 +46,6 @@ body {
 .container {
     width: 100%;
     min-width: 1200px;
-    max-width: 1500px;
     margin: auto;
 }
 
@@ -71,7 +70,7 @@ h1 {
 }
 
 span.dashed {
-    border-bottom: dashed 1px #004494;
+    border-bottom: dashed 1px #333;
 }
 
 span.bold-font {
@@ -884,8 +883,14 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 .product #hdn-1 + label:hover,
 .product #hdn-2 + label:hover {
     color: #58a1d8;
+}
+
+.product #hdn-1 + label:hover span.dashed,
+.product #hdn-2 + label:hover span.dashed {
     border-color: #58a1d8;
 }
+
+
 
 .full-description {
     color: #333;
@@ -938,10 +943,6 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 .characteristics td:first-child,
 .characteristics td:nth-child(2) {
     width: 20px;
-}
-
-.characteristics td:nth-child(2) {
-    background: url("../img/flash-2.png") no-repeat center center;
 }
 
 .characteristics td:nth-child(3) {
