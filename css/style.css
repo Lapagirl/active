@@ -41,6 +41,7 @@ a {
 body {
     font-family: "roboto", sans-serif;
     background-color:  #f8f8f8;
+    font-size: 16px;
 }
 
 .container {
@@ -253,6 +254,8 @@ a.buy:hover {
 a.buy:active {
     font-size: 0.9rem;
 }
+
+
 
 /*Контент*/
 
@@ -959,142 +962,179 @@ form.newsletter-subscribe > input[type="submit"]:hover {
 
 /* Контакты */
 
-form.contact-us {
-    margin-bottom: 30px;
-}
+/*form.contact-us {*/
+    /*margin-bottom: 30px;*/
+/*}*/
 
-form.contact-us > fieldset {
-    border: solid 1px #333;
-}
+/*form.contact-us > fieldset {*/
+    /*border: solid 1px #333;*/
+/*}*/
 
-form.contact-us input:not([type="radio"]),
-textarea {
-    display: block;
-}
+/*form.contact-us input:not([type="radio"]),*/
+/*textarea {*/
+    /*display: block;*/
+/*}*/
 
-form.contact-us input {
-    margin: 15px 0;
-    padding: 10px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    color: #333;
-    font-weight: 700;
-}
+/*form.contact-us input {*/
+    /*margin: 15px 0;*/
+    /*padding: 10px;*/
+    /*border: none;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 0.75rem;*/
+    /*color: #333;*/
+    /*font-weight: 700;*/
+/*}*/
 
-form.contact-us > fieldset > legend {
-    color: #333;
-    text-transform: uppercase;
-}
+/*form.contact-us > fieldset > legend {*/
+    /*color: #333;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-form.contact-us input:not([type="radio"]):not([type="submit"]) {
-    width: 400px;
-    text-transform: uppercase;
-}
+/*form.contact-us input:not([type="radio"]):not([type="submit"]) {*/
+    /*width: 400px;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-form.contact-us input[type="email"]:focus{
-    background-color: rgba(38, 210, 252, 0.07);
-}
+/*form.contact-us input[type="email"]:focus{*/
+    /*background-color: rgba(38, 210, 252, 0.07);*/
+/*}*/
 
-form.contact-us input[type="radio"] {
-    display: none;
-}
+/*form.contact-us input[type="radio"] {*/
+    /*display: none;*/
+/*}*/
 
-input#radio-1 + label,
-input#radio-2 + label {
-    position: relative;
-    padding-left: 16px;
-    margin-right: 21px;
-    cursor: pointer;
-}
+/*input#radio-1 + label,*/
+/*input#radio-2 + label {*/
+    /*position: relative;*/
+    /*padding-left: 16px;*/
+    /*margin-right: 21px;*/
+    /*cursor: pointer;*/
+/*}*/
 
-input#radio-1 + label::before,
-input#radio-2 + label::before,
-input#radio-1 + label::after,
-input#radio-2 + label::after {
-    content: " ";
-    border-radius: 50%;
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
+/*input#radio-1 + label::before,*/
+/*input#radio-2 + label::before,*/
+/*input#radio-1 + label::after,*/
+/*input#radio-2 + label::after {*/
+    /*content: " ";*/
+    /*border-radius: 50%;*/
+    /*position: absolute;*/
+    /*top: 6px;*/
+    /*left: 0;*/
+/*}*/
 
-input#radio-1 + label::before,
-input#radio-2 + label::before {
-    border: solid 1px #26d2fc;
-    width: 10px;
-    height: 10px;
+/*input#radio-1 + label::before,*/
+/*input#radio-2 + label::before {*/
+    /*border: solid 1px #26d2fc;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
 
-}
+/*}*/
 
-input#radio-1 + label::after,
-input#radio-2 + label::after {
-    background-color: #26d2fc;
-    width: 12px;
-    height: 12px;
-    display: none;
-}
+/*input#radio-1 + label::after,*/
+/*input#radio-2 + label::after {*/
+    /*background-color: #26d2fc;*/
+    /*width: 12px;*/
+    /*height: 12px;*/
+    /*display: none;*/
+/*}*/
 
-input#radio-1:checked + label::after,
-input#radio-2:checked + label::after {
-    display: block;
-}
+/*input#radio-1:checked + label::after,*/
+/*input#radio-2:checked + label::after {*/
+    /*display: block;*/
+/*}*/
 
-form.contact-us input[type="submit"] {
-    border: none;
-    cursor: pointer;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
+/*form.contact-us input[type="submit"] {*/
+    /*border: none;*/
+    /*cursor: pointer;*/
+    /*background-color: #000;*/
+    /*color: #fff;*/
+    /*padding: 10px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 400;*/
+/*}*/
 
-form.contact-us input[type="submit"]:hover {
-    background-color: #58a1d8;
-    color: #fff;
-}
+/*form.contact-us input[type="submit"]:hover {*/
+    /*background-color: #58a1d8;*/
+    /*color: #fff;*/
+/*}*/
 
-.contacts .right-column h2 {
-    text-transform: uppercase;
-}
+/*.contacts .right-column h2 {*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-ul.address {
-    margin: 10px 0 20px;
-}
+/*ul.address {*/
+    /*margin: 10px 0 20px;*/
+/*}*/
 
-ul.address li {
-    padding: 4px 0 0 30px;
-    margin-bottom: 8px;
-    position: relative;
-}
+/*ul.address li {*/
+    /*padding: 4px 0 0 30px;*/
+    /*margin-bottom: 8px;*/
+    /*position: relative;*/
+/*}*/
 
-ul.address li::before {
-    display: block;
-    position: absolute;
-    top: 7px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    font-family: "FontAwesome";
-}
+/*ul.address li::before {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 7px;*/
+    /*left: 0;*/
+    /*width: 16px;*/
+    /*height: 16px;*/
+    /*font-family: "FontAwesome";*/
+/*}*/
 
-ul.address li:first-child::before {
-    content: "\f095";
-}
+/*ul.address li:first-child::before {*/
+    /*content: "\f095";*/
+/*}*/
 
-ul.address li:nth-child(2)::before {
-    content: "\f17e";
-}
+/*ul.address li:nth-child(2)::before {*/
+    /*content: "\f17e";*/
+/*}*/
 
-ul.address li:nth-child(3)::before {
-    content: "\f0e0"
-}
+/*ul.address li:nth-child(3)::before {*/
+    /*content: "\f0e0"*/
+/*}*/
 
-ul.address li:nth-child(4)::before {
-    content: "\f041";
-}
+/*ul.address li:nth-child(4)::before {*/
+    /*content: "\f041";*/
+/*}*/
 
-ul.address li:last-child::before {
-    content: "\f1b9";
-}
+/*ul.address li:last-child::before {*/
+    /*content: "\f1b9";*/
+/*}*/
+
+
+/* Контакты-адаптивка*/
+
+/*!*.main-menu-hidden-container > .col-xs-1 {*!*/
+    /*!*width: 40px;*!*/
+    /*!*height: 40px;*!*/
+    /*!*margin: 0;*!*/
+    /*!*padding: 0;*!*/
+/*!*}*!*/
+
+/*!*.main-menu-hidden {*!*/
+    /*!*background-color: #333;*!*/
+    /*!*vertical-align: middle;*!*/
+    /*!*text-align: center;*!*/
+/*!*}*!*/
+
+/*!*.main-menu-hidden > .fa-bars {*!*/
+    /*!*color: #fff;*!*/
+    /*!*line-height: 40px;*!*/
+
+
+
+/*}*/
+
+/*.contacts .container {*/
+    /*min-width: 100%;*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*.contacts .left-column {*/
+    /*width: 100%;*/
+/*}*/
+
+/*.right-column {*/
+    /*width: 100%;*/
+/*}*/
