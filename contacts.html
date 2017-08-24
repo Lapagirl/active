@@ -34,24 +34,22 @@
 
             <div class="content container-fluid">
                 <div class="menu-and-content-group row">
-                    <div class="left-column col-xs-12 col-md-4 container-fluid">
-                        <div class="main-menu row">
-                            <div class="col-xs-12 col-md-12">
-                                <h2>Меню</h2>
-                                <ul class="main-menu-list">
-                                    <li><a href="#" target="_blank">Одежда</a></li>
-                                    <li><a href="#" target="_blank">Туризм</a></li>
-                                    <li><a href="#" target="_blank">Велоспорт</a></li>
-                                    <li><a href="#" target="_blank">Ролики и скейты</a></li>
-                                    <li><a href="#" target="_blank">Водный спорт</a></li>
-                                    <li><a href="#" target="_blank">Зимний спорт</a></li>
-                                    <li><a href="#" target="_blank">Аксессуары</a></li>
-                                    <li><a href="#" target="_blank">Распродажа</a></li>
-                                    <li><a href="catalog.html">Полный каталог</a></li>
-                                    <li><a class="selected-menu" href="contacts.html">Контакты</a></li>
-                                    <li><a href="#" target="_blank">Доставка</a></li>
-                                </ul>
-                            </div>
+                    <div class="main-menu hidden-container col-xs-12 col-sm-12 hidden-md hidden-lg">
+                        <div class="main-menu-hidden-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                        <ul class="main-menu-list">
+                            <li><a href="bike.html">Велоспорт</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a class="selected-menu" href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-column hidden-xs hidden-sm col-md-4">
+                        <div class="main-menu">
+                            <h2>Меню</h2>
+                            <ul class="main-menu-list">
+                                <li><a href="bike.html">Велоспорт</a></li>
+                                <li><a href="catalog.html">Каталог</a></li>
+                                <li><a class="selected-menu" href="contacts.html">Контакты</a></li>
+                            </ul>
                         </div>
                         <div class="row">
                             <div class="banner hidden-xs hidden-sm col-md-12">
@@ -64,9 +62,9 @@
                         <form class="contact-us" action="#" method="post">
                             <fieldset>
                                 <legend>Напишите нам</legend>
-                                <input type="text" name="username" placeholder="Введите ваше имя">
-                                <input type="email" name="email" placeholder="Введите ваш адрес электронной почты">
-                                <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+                                <input type="text" name="username" placeholder="Ваше имя">
+                                <input type="email" name="email" placeholder="Адрес электронной почты">
+                                <input type="tel" name="phone" placeholder="Номер телефона">
                                 Выберите наиболее удобный способ связи с вами:<br />
                                     <input type="radio" id="radio-1" name="communication-way" value="email-way">
                                     <label for="radio-1">Email</label>
@@ -76,7 +74,7 @@
 
                                 <input type="text" name="subject" placeholder="Тема сообщения">
                                 <label for="message">Суть вашего письма:</label>
-                                <textarea name="message" id="message" cols="35" rows="10"></textarea>
+                                <textarea name="message" id="message" cols="29" rows="10"></textarea>
                                 <input type="submit" value="Отправить">
                             </fieldset>
                         </form>

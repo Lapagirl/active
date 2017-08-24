@@ -34,6 +34,42 @@
             padding: 0;
         }
 
+        .main-menu-hidden-container {
+            position: relative;
+            background-color: cornflowerblue;
+        }
+
+        .main-menu-hidden-container > ul {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            height: 100px;
+            width: 500px;
+            z-index: 1;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .main-menu-hidden-icon {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+        .main-menu-hidden-icon:hover + ul {
+            display: block;
+        }
+
+        .main-menu-hidden-icon + ul:hover {
+            display: block;
+        }
+
+        .main-menu-hidden-container .fa-bars {
+            line-height: 30px;
+        }
+
+
 
     </style>
 </head>
@@ -41,7 +77,17 @@
 
     <div class="content container-fluid">
         <div class="menu-and-content-group row">
-            <div class="left-column col-xs-12 col-md-4 container-fluid">
+            <div class="row">
+                <div class="main-menu-hidden-container col-xs-12 col-sm-12 hidden-md hidden-lg">
+                    <div class="main-menu-hidden-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <ul>
+                        <li>Велоспорт</li>
+                        <li>Каталог</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-column hidden-xs hidden-sm col-md-4 container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
                         <h2>Меню</h2>

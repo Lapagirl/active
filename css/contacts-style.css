@@ -61,9 +61,10 @@ body {
 }
 
 h1 {
-    font-size: 1.875rem;
+    font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 26px;
+    font-weight: 700;
 }
 
 span.bold-font {
@@ -148,14 +149,46 @@ span.bold-font {
     margin: 20px auto 0;
 }
 
+.menu-and-content-group div.hidden-container {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-/*Левая колонка*/
+.menu-and-content-group > .hidden-container > .main-menu-hidden-icon {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    /*text-align: center;*/
+}
+
+.menu-and-content-group > .hidden-container > .main-menu-hidden-icon:hover {
+    cursor: pointer;
+}
+
+.menu-and-content-group > .hidden-container > .main-menu-list {
+    position: absolute;
+    width: 270px;
+    top: 40px;
+    left: 15px;
+    display: none;
+}
+
+.menu-and-content-group > .hidden-container > .main-menu-hidden-icon:hover + .main-menu-list,
+.menu-and-content-group > .hidden-container > .main-menu-hidden-icon + .main-menu-list:hover {
+    display: block;
+    z-index: 1;
+}
+
+    /*Левая колонка*/
 
 .left-column {
     padding: 0;
 }
 
-.left-column .main-menu {
+.main-menu {
     text-transform: uppercase;
 }
 
@@ -176,7 +209,7 @@ span.bold-font {
 .main-menu-list > li > a {
     display: block;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 3;
     font-weight: 900;
     padding-left: 40px;
@@ -231,7 +264,7 @@ form.contact-us > fieldset > legend {
 }
 
 form.contact-us input:not([type="radio"]):not([type="submit"]) {
-    min-width: 300px;
+    min-width: 250px;
     text-transform: uppercase;
 }
 
