@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <title>Active — интернет-магазин товаров для активного отдыха</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <title>Каталог товаров магазина Active</title>
+    </head>
+
     <body>
-        <div class="container main-page">
+        <div class="container catalog">
             <div class="header">
                 <div class="header-bg bg-1"></div>
-                <div class="header-bg bg-2"></div>
+                <div class="header-bg bg-0"></div>
                 <div class="header-group group-1 clearfix">
-                    <img class="logo" src="img/logo.png" alt="logo">
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                     <div class="social-list-group">
                         <a class="solial-list-group-item" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a class="solial-list-group-item" href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a class="solial-list-group-item" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                         <a class="solial-list-group-item" href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                         <a class="solial-list-group-item" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="header-group group-2">
-                    <div class="welcome">
-                        <h1>Добро пожаловать в Active</h1>
-                        <p>Здесь вы найдете всё, что позволит сделать ваш досуг ярче, а ваше тело &mdash; спортивнее</p>
-                    </div>
-
-                    <div class="brand-new">
-                        <h2>Велосипед Stern Air 2.0</h2>
-                        <p>Заниженная геометрия и меньший размер рамы, а также широкий руль позволят легко управлять велосипедом в воздухе. А прочная вилка и двойные обода выдержат повышенные нагрузки при приземлении</p>
-                        <a class="button buy" href="products/stern_air.html">Купить</a>
                     </div>
                 </div>
             </div>
@@ -41,8 +30,9 @@
                             <h2>Меню</h2>
                             <ul class="main-menu-list">
                                 <li><a href="bike.html">Велоспорт</a></li>
-                                <li><a href="catalog.html">Каталог</a></li>
+                                <li><a class="selected-menu" href="catalog.html">Каталог</a></li>
                                 <li><a href="contacts.html">Контакты</a></li>
+
                             </ul>
                         </div>
                         <div class="banner">
@@ -50,8 +40,8 @@
                         </div>
                     </div>
                     <div class="right-column">
-                        <h2>Новинки</h2>
-                        <ul class="products-list-group new-section">
+                        <h1>Каталог</h1>
+                        <ul class="products-list-group">
                             <li class="products-list-group-item new">
                                 <div class="img-container">
                                     <img src="img/products-small-preset/air.jpg" alt="Stern Air 2.0">
@@ -79,6 +69,7 @@
                                 </div>
                                 <a href="products/stern_mira.html" class="products-list-group-item-link"></a>
                             </li>
+
                             <li class="products-list-group-item">
                                 <div class="img-container">
                                     <img src="img/products-small-preset/motion.jpg" alt="Stern Motion 1.0">
@@ -105,6 +96,47 @@
                                     </div>
                                 </div>
                                 <a href="products/stern_energy.html" class="products-list-group-item-link"></a>
+                            </li>
+
+                            <li class="products-list-group-item sale">
+                                <div class="img-container">
+                                    <img src="img/products-small-preset/roliki.jpg" alt="Fila NRK JP">
+                                </div>
+                                <div class="product-title-and-price-group clearfix">
+                                    <h3>Роликовые коньки мужские Fila&nbsp;NRK&nbsp;JP</h3>
+                                    <div class="price">
+                                        9 749 &#8381;
+                                        <div class="old-price">19 499 &#8381;</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="products-list-group-item-link"></a>
+                            </li>
+
+                            <li class="products-list-group-item sale">
+                                <div class="img-container">
+                                    <img src="img/products-small-preset/backpack.jpg" alt="Skechers">
+                                </div>
+                                <div class="product-title-and-price-group clearfix">
+                                    <h3>Рюкзак Skechers</h3>
+                                    <div class="price">
+                                        299 &#8381;
+                                    </div>
+                                </div>
+                                <a href="#" class="products-list-group-item-link"></a>
+                            </li>
+
+                            <li class="products-list-group-item sale">
+                                <div class="img-container">
+                                    <img src="img/products-small-preset/kruiser.jpg" alt="Dusters Rebel Cruiser Kryptonic">
+                                </div>
+                                <div class="product-title-and-price-group clearfix">
+                                    <h3>Круизер Dusters Rebel Cruiser Kryptonic</h3>
+                                    <div class="price">
+                                        9 239 &#8381;
+                                        <div class="old-price">13 199 &#8381;</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="products-list-group-item-link"></a>
                             </li>
 
                             <li class="products-list-group-item">
@@ -134,10 +166,7 @@
                                 </div>
                                 <a href="#" class="products-list-group-item-link"></a>
                             </li>
-                        </ul>
 
-                        <h2>Популярное</h2>
-                        <ul class="products-list-group top-section">
                             <li class="products-list-group-item">
                                 <div class="img-container">
                                     <img src="img/products-small-preset/braslet.jpg" alt="Onetrak Life 01">
@@ -177,87 +206,11 @@
                                 <a href="#" class="products-list-group-item-link"></a>
                             </li>
                         </ul>
-
-                        <h2>Распродажа</h2>
-                        <ul class="products-list-group sale-section">
-                            <li class="products-list-group-item sale">
-                                <div class="img-container">
-                                    <img src="img/products-small-preset/roliki.jpg" alt="Fila NRK JP">
-                                </div>
-                                <div class="product-title-and-price-group clearfix">
-                                    <h3>Роликовые коньки мужские Fila&nbsp;NRK&nbsp;JP</h3>
-                                    <div class="price">
-                                        9 749 &#8381;
-                                        <div class="old-price">19 499 &#8381;</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="products-list-group-item-link"></a>
-                            </li>
-
-                            <li class="products-list-group-item sale">
-                                <div class="img-container">
-                                    <img src="img/products-small-preset/backpack.jpg" alt="Skechers">
-                                </div>
-                                <div class="product-title-and-price-group clearfix">
-                                    <h3>Рюкзак Skechers</h3>
-                                    <div class="price">
-                                        299 &#8381;
-                                    </div>
-                                </div>
-                                <a href="products/stern_air.html" class="products-list-group-item-link"></a>
-                            </li>
-
-                            <li class="products-list-group-item sale">
-                                <div class="img-container">
-                                    <img src="img/products-small-preset/kruiser.jpg" alt="Dusters Rebel Cruiser Kryptonic">
-                                </div>
-                                <div class="product-title-and-price-group clearfix">
-                                    <h3>Круизер Dusters Rebel Cruiser Kryptonic</h3>
-                                    <div class="price">
-                                        9 239 &#8381;
-                                        <div class="old-price">13 199 &#8381;</div>
-                                    </div>
-                                </div>
-                                <a href="products/stern_mira.html" class="products-list-group-item-link"></a>
-                            </li>
-
-
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="brands">
-                    <a href="#"><img src="img/brands/Columbia.svg" alt="Columbia"></a>
-                    <a href="#"><img src="img/brands/Demix.svg" alt="Demix"></a>
-                    <a href="#"><img src="img/brands/Merrell.svg" alt="Merrell"></a>
-                    <a href="#"><img src="img/brands/Nike.svg" alt="Nike"></a>
-                    <a href="#"><img src="img/brands/Outventure.svg" alt="Outventure"></a>
-                    <a href="#"><img src="img/brands/Reaction_mix.svg" alt="Reaction_mix"></a>
-                    <a href="#"><img src="img/brands/Roces.svg" alt="Roces"></a>
-                    <a href="#"><img src="img/brands/Termit.svg" alt="Termit"></a>
-                </div>
-                <div class="social-group">
-                    <div class="social-group-instagram">
-                        <div>
-                            <h2><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i> Instagram: <span class="instagram-feed-adress">#activeshop</span></a></h2>
-                        </div>
-
-                        <ul class="instagram-photo-list">
-                            <li><img src="img/bike.jpg" alt="bike"></li>
-                            <li><img src="img/skate.jpg" alt="skate"></li>
-                            <li><img src="img/frisbee.jpg" alt="frisbee"></li>
-                            <li><img src="img/travel.jpg" alt="travel"></li>
-                            <li><img src="img/roller.jpg" alt="roller"></li>
-                            <li><img src="img/skiing.jpg" alt="skiing"></li>
-                        </ul>
-                    </div>
-                    <div class="social-group-second-line clearfix">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p fa-4x" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+
             <div class="footer">
                 <div class="footer-first-line-group">
                     <div class="footer-first-line-group-item category">
@@ -327,22 +280,21 @@
                         </div>
                     </div>
                 </div>
-                    <div class="footer-second-line-group">
-                        <div class="footer-second-line-group-content">
-                            <p>&copy; 2017 Lapagirl. Все права защищены</p>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                                <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
-                            </div>
+                <div class="footer-second-line-group">
+                    <div class="footer-second-line-group-content">
+                        <p>&copy; 2017 Lapagirl. Все права защищены</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://ru.pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
                         </div>
                     </div>
+                </div>
 
             </div>
-        </div>
-</body>
+    </body>
 </html>
