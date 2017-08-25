@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ddee01-9e3d-41f1-8b08-1520b0e2ed8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/helpers/_variables.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lab-less/lab-contacts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lab-less/new-contacts-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lab-less/new-contacts-style.less" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.html" afterPath="$PROJECT_DIR$/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/lab-bootstrap.html" afterPath="$PROJECT_DIR$/products/lab-bootstrap.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/contacts-style.css" afterPath="$PROJECT_DIR$/less/contacts-style.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/less/font-awesome.min.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/less/style.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab-less/_contacts-variables.css" afterPath="$PROJECT_DIR$/less/base/_reset.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab-less/_contacts-variables.less" afterPath="$PROJECT_DIR$/less/helpers/_mixins.less" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab-less/_contacts-variables.css" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -383,7 +371,7 @@
       <workItem from="1503513915511" duration="577000" />
       <workItem from="1503514511505" duration="4466000" />
       <workItem from="1503545162148" duration="888000" />
-      <workItem from="1503578316185" duration="30125000" />
+      <workItem from="1503578316185" duration="30203000" />
     </task>
     <task id="LOCAL-00001" summary="created hidden menu for mobile devices">
       <created>1503541036672</created>
@@ -396,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215739000" />
+    <option name="totallyTimeSpent" value="215817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="2895" height="1398" extended-state="0" />
