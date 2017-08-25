@@ -1,0 +1,94 @@
+.content-area-params() {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  //padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.main-menu-style() {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.main-menu-list-style(@menu-list-color, @menu-text-color, @menu-hover-background-item-color, @menu-hover-text-color, @menu-selected-item-color, @menu-selected-text-color) {
+  margin: 0;
+  padding: 6px 0 8px;
+  background-color: @menu-list-color;
+  a {
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 3;
+    font-weight: 900;
+    padding-left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    color: @menu-text-color;
+    &:hover {
+      background-color: @menu-hover-background-item-color;
+      color: @menu-hover-text-color;
+    }
+  }
+  .selected-menu {
+    background-color: @menu-selected-item-color;
+    color: @menu-selected-text-color;
+  }
+}
+
+.radio-label-style() {
+  & + label {
+    position: relative;
+    padding-left: 16px;
+    margin-right: 21px;
+    cursor: pointer;
+  }
+}
+
+.radio-button-base-style() {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.radio-button-not-checked-style(@radio-button-color) {
+  & + label::before {
+    .radio-button-base-style();
+    border: solid 1px @radio-button-color;
+  }
+}
+
+.radio-button-checked-style(@radio-button-color) {
+  & + label::after {
+    .radio-button-base-style();
+    background-color: @radio-button-color;
+    display: none;
+  }
+}
+
+.submit-base-style(@submit-background-color, @submit-text-color, @submit-hover-background-color, @submit-hover-text-color) {
+  border: none;
+  cursor: pointer;
+  background-color: @submit-background-color;
+  color: @submit-text-color;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  &:hover {
+    background-color: @submit-hover-background-color;
+    color: @submit-hover-text-color;
+  }
+}
+
+.footer-links-and-text-style(@footer-links-main-color) {
+    font-family: "roboto", sans-serif;
+    color: @footer-links-main-color;
+    font-size: 1.2rem;
+  }
+
+.footer-second-line-margin() {
+  margin: 20px 15px;
+}
