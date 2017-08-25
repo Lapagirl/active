@@ -93,6 +93,7 @@ span.bold-font {
 .header .header-group {
   max-width: 1200px;
   margin: 0 auto 30px;
+  min-width: 320px;
   box-sizing: border-box;
 }
 .header .header-group .logo {
@@ -119,6 +120,7 @@ span.bold-font {
 .content {
   max-width: 1200px;
   margin: 0 auto 30px;
+  min-width: 320px;
   box-sizing: border-box;
 }
 /*Контент*/
