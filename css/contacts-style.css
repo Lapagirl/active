@@ -309,7 +309,7 @@ span.bold-font {
 .menu-and-content-group div.right-column form.contact-us input[type="submit"] {
   border: none;
   cursor: pointer;
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   padding: 10px;
   text-transform: uppercase;
@@ -413,7 +413,7 @@ span.bold-font {
 .footer-first-line-group .newsletter form.newsletter-subscribe > input[type="submit"] {
   border: none;
   cursor: pointer;
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   padding: 10px;
   text-transform: uppercase;
